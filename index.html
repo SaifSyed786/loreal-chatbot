@@ -1,9 +1,9 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>L'Oréal | Routine Builder</title>
+    <title>L'Oréal | Smart Beauty Advisor</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
       rel="stylesheet"
@@ -20,67 +20,16 @@
       <header class="site-header">
         <img src="img/loreal-logo.png" alt="L'Oréal Logo" class="logo" />
         <p class="eyebrow">Beauty Powered by AI</p>
-        <h1 class="site-title">L'Oréal Routine Builder</h1>
+        <h1 class="site-title">Smart Routine & Product Advisor</h1>
         <p class="site-subtitle">
-          Browse products, build a routine, and ask follow-up questions.
+          Ask me anything about L'Oréal products, skincare routines, haircare, makeup, and more.
         </p>
       </header>
 
-      <section class="controls-section">
-        <div class="filter-group">
-          <label for="categoryFilter" class="control-label">Category</label>
-          <select id="categoryFilter">
-            <option value="all">All Categories</option>
-            <option value="cleanser">Cleansers</option>
-            <option value="moisturizer">Moisturizers & Treatments</option>
-            <option value="haircare">Haircare</option>
-            <option value="makeup">Makeup</option>
-            <option value="hair color">Hair Color</option>
-            <option value="hair styling">Hair Styling</option>
-            <option value="men's grooming">Men's Grooming</option>
-            <option value="suncare">Suncare</option>
-            <option value="fragrance">Fragrance</option>
-          </select>
-        </div>
-
-        <div class="filter-group">
-          <label for="searchInput" class="control-label">Search Products</label>
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="Search by name, brand, or keyword..."
-          />
-        </div>
-      </section>
-
-      <section class="products-section">
-        <div class="section-heading-row">
-          <h2>Products</h2>
-          <p class="section-note">Click a card to select or unselect it.</p>
-        </div>
-        <div id="productsContainer" class="products-grid"></div>
-      </section>
-
-      <section class="selected-products">
-        <div class="section-heading-row">
-          <h2>Selected Products</h2>
-          <button id="clearSelectionsBtn" class="secondary-btn" type="button">
-            Clear All
-          </button>
-        </div>
-
-        <div id="selectedProductsList" class="selected-products-list"></div>
-
-        <button id="generateRoutine" class="generate-btn" type="button">
-          <i class="fa-solid fa-wand-magic-sparkles"></i>
-          Generate Routine
-        </button>
-      </section>
-
       <section class="chatbox">
         <div class="section-heading-row">
-          <h2>About Your Routine</h2>
-          <span class="chat-status">Routine + follow-up chat</span>
+          <h2>Your Beauty Advisor</h2>
+          <span class="chat-status">AI-powered chat</span>
         </div>
 
         <div id="chatWindow" class="chat-window"></div>
@@ -91,7 +40,7 @@
             id="userInput"
             name="userInput"
             type="text"
-            placeholder="Ask about your routine, order of use, or product fit..."
+            placeholder="Ask about skincare, haircare, makeup, or routines..."
             autocomplete="off"
             required
           />
